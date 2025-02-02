@@ -69,11 +69,32 @@ main {
     color: #003a22;
 }
 
+.task-counter{
+    margin: 10px;
+    color: #01aa64;
+}
+
 
 .list-task{
     width: 100%;
     height: auto;
     padding: 10px 20px;
+}
+
+.list-group-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-pencil{
+    color: var(--one);
+    padding: 0px 10px;
+}
+
+.fa-trash{
+    color: rgb(172, 13, 13);
+    padding: 0px 10px;
 }
 
 
@@ -82,4 +103,10 @@ main {
 footer{
     bottom: 0px;
     background-color: var(--one);
+}
+
+footer div p a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
 }
