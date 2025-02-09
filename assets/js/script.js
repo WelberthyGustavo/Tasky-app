@@ -5,7 +5,7 @@ function Add() {
     let text = input.value.trim();
 
     if (text !== "") {
-        itens.push({ text: text, checked: false }); // Add new item with "unchecked"
+        itens.push({ text: text, checked: false });
         saveTasks();
         updateList();
         input.value = "";
@@ -21,6 +21,7 @@ function updateList() {
     itens.forEach((item, index) => {
         let li = document.createElement("li");
         li.classList.add("list-group-item");
+        li.title = "Double tap to edit"; 
 
         let divInfo = document.createElement("div");
         divInfo.classList.add("form-info");
